@@ -21,6 +21,7 @@ import { SuggestionComponent } from './components/suggestion/suggestion.componen
 import { ProfileComponent } from './components/profile/profile.component';
 import { StaffListComponent } from './components/staff/staff-list/staff-list.component';
 import { StaffAddComponent } from './components/staff/staff-add/staff-add.component';
+import { TopComponent } from './components/top/top.component';
 
 // Parent Routes
 const routes : Routes = [
@@ -33,6 +34,10 @@ const routes : Routes = [
 {
 	path: 'login',
 	component: LoginComponent
+},
+{
+  path: 'index',
+  component: TopComponent
 },
 {
 	path: '**',
@@ -50,7 +55,8 @@ const routes : Routes = [
     SuggestionComponent,
     ProfileComponent,
     StaffListComponent,
-    StaffAddComponent
+    StaffAddComponent,
+    TopComponent
   ],
   imports: [
     BrowserModule,
