@@ -20,6 +20,7 @@ import { StockListComponent } from './components/stock/stock-list/stock-list.com
 import { SuggestionComponent } from './components/suggestion/suggestion.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { StaffListComponent } from './components/staff/staff-list/staff-list.component';
+
 import { TopComponent } from './components/top/top.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ShopComponent } from './components/shop/shop.component';
@@ -38,12 +39,17 @@ const routes : Routes = [
 	component: LoginComponent
 },
 {
+<<<<<<< HEAD
 	path: 'index',
 	component: TopComponent
 },
 {
 	path: 'shop',
 	component: ShopComponent
+=======
+  path: 'index',
+  component: TopComponent
+>>>>>>> c7dba9fae51e337f2ae221e7fe292c6a0069d2b6
 },
 {
 	path: '**',
@@ -61,10 +67,15 @@ const routes : Routes = [
     SuggestionComponent,
     ProfileComponent,
     StaffListComponent,
+<<<<<<< HEAD
     TopComponent,
     HeaderComponent,
     ShopComponent,
     FooterComponent
+=======
+    StaffAddComponent,
+    TopComponent
+>>>>>>> c7dba9fae51e337f2ae221e7fe292c6a0069d2b6
   ],
   imports: [
     BrowserModule,

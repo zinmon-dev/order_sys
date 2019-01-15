@@ -1,0 +1,28 @@
+header {
+    background-color: #ffd45f;
+    position: relative;
+    height: 125px;
+}
+.logo {
+    margin-top: 10px;
+}
+.top-banner {
+    position: absolute;
+    top: 4px;
+    z-index: 0;
+    left: 52px;
+}
+.menu {
+    background-color: #d1a23e;
+    position: relative;
+}
+.navbar-menu-default {
+    background-color: #0000;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+#main-menu > li > a:hover {
+    color: #fff;
+    background-color: #c49035;
+}
