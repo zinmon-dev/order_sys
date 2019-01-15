@@ -1,0 +1,44 @@
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+  
+  <div class="row" id="pwd-container">
+    <div class="col-md-4"></div>
+    
+    <div class="col-md-4">
+      <section class="login-form">
+        <form [formGroup]="loginForm" (ngSubmit)="doLogin()" role="login">
+          LOGO
+          <input type="email" formControlName="email" placeholder="Email" required class="form-control input-lg" />
+		  <span class="text-danger" *ngIf="loginForm.controls.email.invalid && (loginForm.controls.email.dirty || loginForm.controls.email.touched)">
+		  Enter your email
+		  </span>
+          
+          <input type="password" class="form-control input-lg" id="password" placeholder="Password" formControlName="password" />
+          <span class="text-danger" *ngIf="loginForm.controls.password.invalid && (loginForm.controls.password.dirty || loginForm.controls.password.touched)">Password must be at least 6 characters long, and contain a number</span> 
+          
+          <div class="pwstrength_viewport_progress"></div>
+          
+          
+          <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Sign in</button>
+          <div>
+            <a href="#">Create account</a> or <a href="#">reset password</a>
+          </div>
+          
+        </form>
+        
+        <div class="form-links">
+          <a href="#">www.website.com</a>
+        </div>
+      </section>  
+      </div>
+      
+      <div class="col-md-4"></div>
+      
+
+  </div> 
+  
+  
+</div>
